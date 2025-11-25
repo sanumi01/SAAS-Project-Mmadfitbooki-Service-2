@@ -1,0 +1,13 @@
+{
+  "trainerId": {"S": "trainer-001"},
+  "name": {"S": "Sarah Johnson"},
+  "email": {"S": "sarah@mmadfitbooki.com"},
+  "specialization": {"SS": ["Personal Training", "Weight Loss", "Strength Training"]},
+  "bio": {"S": "Certified personal trainer with 5+ years experience"},
+  "hourlyRate": {"N": "75"},
+  "rating": {"N": "4.8"},
+  "totalBookings": {"N": "150"},
+  "isActive": {"BOOL": true},
+  "createdAt": {"S": "2025-01-01T12:00:00Z"},
+  "updatedAt": {"S": "2025-01-01T12:00:00Z"}
+}

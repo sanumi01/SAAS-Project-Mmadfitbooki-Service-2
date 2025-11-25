@@ -1,0 +1,24 @@
+@import './styles/design-system.css';
+@import './styles/utilities.css';
+
+/* App base styles (kept minimal; design system provides tokens) */
+html, body, #root {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: var(--font-sans);
+	color: var(--text-default);
+	background-color: var(--bg-default);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility to visually hide elements but keep them accessible to screen readers */
+.sr-only {
+	position: absolute !important;
+	width: 1px; height: 1px;
+	padding: 0; margin: -1px; overflow: hidden;
+	clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+

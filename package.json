@@ -1,0 +1,47 @@
+{
+  "name": "saas-mmadfitbooki-service",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint --config eslint.config.cjs . --ext .ts,.tsx --max-warnings=0",
+    "lint:fix": "eslint --config eslint.config.cjs . --ext .ts,.tsx --fix",
+    "preview": "vite preview",
+    "deploy": "npm run build && powershell -ExecutionPolicy Bypass -File deploy-enhanced.ps1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.899.0",
+    "@aws-sdk/client-dynamodb": "^3.899.0",
+    "@aws-sdk/client-ses": "^3.899.0",
+    "@aws-sdk/lib-dynamodb": "^3.899.0",
+    "@google/genai": "^1.20.0",
+    "@paypal/react-paypal-js": "^8.1.3",
+    "axios": "^1.4.0",
+    "date-fns": "^2.30.0",
+    "react": "^18.2.0",
+    "react-calendar": "^4.8.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.9",
+    "react-router-dom": "^6.8.1",
+    "recharts": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "source-map-explorer": "^2.5.3",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "vite-plugin-bundle-analyzer": "^0.0.1"
+  }
+}

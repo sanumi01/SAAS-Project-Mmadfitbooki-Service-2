@@ -1,0 +1,67 @@
+{
+    "CallerReference": "mmad-fitbooki-fitness-20251001",
+    "Aliases": {
+        "Quantity": 1,
+        "Items": ["fitness.mamaadsolution.com"]
+    },
+    "Comment": "MMAD FitBooki - fitness.mamaadsolution.com",
+    "DefaultCacheBehavior": {
+        "TargetOriginId": "S3-mmadfitbooki-servive",
+        "ViewerProtocolPolicy": "redirect-to-https",
+        "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+        },
+        "ForwardedValues": {
+            "QueryString": false,
+            "Cookies": {
+                "Forward": "none"
+            }
+        },
+        "MinTTL": 0,
+        "DefaultTTL": 86400,
+        "MaxTTL": 31536000,
+        "Compress": true
+    },
+    "Origins": {
+        "Quantity": 1,
+        "Items": [
+            {
+                "Id": "S3-mmadfitbooki-servive",
+                "DomainName": "mmadfitbooki-servive.s3-website-us-east-1.amazonaws.com",
+                "CustomOriginConfig": {
+                    "HTTPPort": 80,
+                    "HTTPSPort": 443,
+                    "OriginProtocolPolicy": "http-only"
+                }
+            }
+        ]
+    },
+    "Enabled": true,
+    "DefaultRootObject": "index.html",
+    "CustomErrorResponses": {
+        "Quantity": 2,
+        "Items": [
+            {
+                "ErrorCode": 404,
+                "ResponsePagePath": "/index.html",
+                "ResponseCode": "200",
+                "ErrorCachingMinTTL": 300
+            },
+            {
+                "ErrorCode": 403,
+                "ResponsePagePath": "/index.html",
+                "ResponseCode": "200",
+                "ErrorCachingMinTTL": 300
+            }
+        ]
+    },
+    "ViewerCertificate": {
+        "ACMCertificateArn": "arn:aws:acm:us-east-1:376467672970:certificate/ae5ae9ca-45b9-45f7-b430-bb2fa9ab81c7",
+        "SSLSupportMethod": "sni-only",
+        "MinimumProtocolVersion": "TLSv1.2_2021"
+    },
+    "PriceClass": "PriceClass_100",
+    "HttpVersion": "http2",
+    "IsIPV6Enabled": true
+}

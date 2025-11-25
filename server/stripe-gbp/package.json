@@ -1,0 +1,13 @@
+{
+  "name": "stripe-gbp-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test/createIntent.test.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2"
+  }
+}

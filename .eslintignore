@@ -1,0 +1,8 @@
+node_modules
+dist
+build
+coverage
+*.bak-encoding
+focus-scan.txt
+build-log.txt
+encoding-fix-report.json

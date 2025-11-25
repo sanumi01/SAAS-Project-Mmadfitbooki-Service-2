@@ -1,0 +1,73 @@
+# .gitignore - focus on excluding backups and workspace noise
+
+# Node / build
+node_modules/
+dist/
+build/
+coverage/
+
+# Editor and OS
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-workspace
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and temp
+*.log
+*.tmp
+*.bak
+
+# Shortcut and exported files
+*.lnk
+*.pdf
+*.docx
+*.doc
+*.odt
+*.zip
+*.tar.gz
+*.7z
+
+# Backup folders (pattern for dated backups)
+backup-*/
+backup*/
+*backup*/
+
+# Common large folders seen in workspace noise — ignore top-level partner/project folders
+AWS-AWESOME/
+AWS-DEVOPS-ZERO-TO-HERE/
+mmad-app/
+
+# Ignore OneDrive/parent project aggregated folder names (allow patterns with spaces)
+SAAS\ PROJECTS/
+
+# Tools and artifacts
+.cache/
+.eslintcache
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,5 @@
+{
+  "name": "MmadFitbooki Scheduler",
+  "description": "An online booking widget for personal trainers and fitness studios. Features include staff scheduling, a simple calendar for appointments, and a real-time walk-in queue display.",
+  "requestFramePermissions": []
+}

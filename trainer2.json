@@ -1,0 +1,13 @@
+{
+  "trainerId": {"S": "trainer-002"},
+  "name": {"S": "Mike Rodriguez"},
+  "email": {"S": "mike@mmadfitbooki.com"},
+  "specialization": {"SS": ["CrossFit", "HIIT", "Athletic Performance"]},
+  "bio": {"S": "Former professional athlete specializing in high-intensity training"},
+  "hourlyRate": {"N": "85"},
+  "rating": {"N": "4.9"},
+  "totalBookings": {"N": "200"},
+  "isActive": {"BOOL": true},
+  "createdAt": {"S": "2025-01-01T12:00:00Z"},
+  "updatedAt": {"S": "2025-01-01T12:00:00Z"}
+}
